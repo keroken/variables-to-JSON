@@ -1,64 +1,82 @@
-figma.showUI(__html__);
+console.clear();
 
-figma.ui.resize(500, 500);
+figma.ui.onmessage = (e) => {
+  console.log("code received", e);
+  if (e.type === 'EXPORT') {
+    exportToJSON();
+  } else if (e.type === 'IMPORT') {
+    return;
+  }
+}
 
-figma.ui.onmessage = async(pluginMessage)=> {
-
-  await figma.loadFontAsync({ family: "Rubik", style: "Regular" });
-
-  const nodes:SceneNode[] = [];
-
-  const postComponentSet = figma.root.findOne(node => node.type == "COMPONENT_SET" && node.name == "post") as ComponentSetNode;
-
-  let selectedVariant;
-
-  if (pluginMessage.darkModeState === true) {
-    switch(pluginMessage.imageVariant) {
-      case "2" :
-        // dark mode, single image
-        selectedVariant = postComponentSet.findOne(node => node.type == "COMPONENT" && node.name == "Image=single, Dark mode=true") as ComponentNode;
-        break;
-      case "3" :
-        // dark mode, carousel
-        selectedVariant = postComponentSet.findOne(node => node.type == "COMPONENT" && node.name == "Image=carousel, Dark mode=true") as ComponentNode;
-        break;
-      default :
-        // dark mode, no image
-        selectedVariant = postComponentSet.findOne(node => node.type == "COMPONENT" && node.name == "Image=none, Dark mode=true") as ComponentNode;
-        break;
-    }
-  } else {
-    switch(pluginMessage.imageVariant) {
-      case "2" :
-        // light mode, single image
-        selectedVariant = postComponentSet.findOne(node => node.type == "COMPONENT" && node.name == "Image=single, Dark mode=false") as ComponentNode;
-        break;
-      case "3" :
-        // light mode, carousel
-        selectedVariant = postComponentSet.findOne(node => node.type == "COMPONENT" && node.name == "Image=carousel, Dark mode=false") as ComponentNode;
-        break;
-      default :
-        // light mode, no image
-        selectedVariant = postComponentSet.defaultVariant as ComponentNode;
-        break;
-    }
+  function exportToJSON() {
+    const collections = figma.variables.getLocalVariableCollections();
+    const files:{ fileName: string, body: {}} [] = [];
+    collections.forEach((collection) =>
+      files.push(...processCollection(collection))
+    );
+    figma.ui.postMessage({ type: "EXPORT_RESULT", files });
   }
 
-  const newPost = selectedVariant.createInstance();
+  function processCollection({ name, modes, variableIds }: VariableCollection) {
+    const files: { fileName: string, body: {}}[] = [];
+    modes.forEach((mode) => {
+      const file = { fileName: `${name}.${mode.name}.tokens.json`, body: {} };
+      variableIds.forEach((variableId) => {
+        const variable = figma.variables.getVariableById(variableId);
+        const value = variable?.valuesByMode[mode.modeId];
+        
+        if (value !== undefined && variable !== null && ["COLOR", "FLOAT"].includes(variable.resolvedType)) {
+          let obj:{[key:string]: any} = file.body;
+          name.split("/").forEach((groupName) => {
+            obj[groupName] = obj[groupName] || {};
+            obj = obj[groupName];
+          });
+          obj.$type = variable?.resolvedType === "COLOR" ? "color" : "number";
+          if (value === 'VariableAlias') {
+            obj.$value = `{${figma.variables.getVariableById(variable.id)?.name.replace(/\//g, ".")}}`;
+          } else if (variable.resolvedType === 'COLOR') {
+            obj.$value = rgbToHex(value);
+          } else {
+            obj.$value = value;
+          }
+        }
+      });
+      files.push(file);
+    });
+    return files;
+  }
 
-  const templateName = newPost.findOne(node => node.name == "displayName" && node.type == "TEXT") as TextNode;
-  const templateUserName = newPost.findOne(node => node.name == "@username" && node.type == "TEXT") as TextNode;
-  const templateDescription = newPost.findOne(node => node.name == "description" && node.type == "TEXT") as TextNode;
-  const numLikes = newPost.findOne(node => node.name == "likesLabel" && node.type == "TEXT") as TextNode;
+  function rgbToHex( colorValue: VariableValue) {
+    const { r, g, b, a } = colorValue as any;
+    if (a !== 1 && a !== undefined) {
+      return `rgba(${[r, g, b]
+        .map((n) => Math.round(n * 255))
+        .join(", ")}, ${a.toFixed(4)})`;
+    }
+    const toHex = (value: any) => {
+      const hex = Math.round(value * 255).toString(16);
+      return hex.length === 1 ? "0" + hex : hex;
+    };
+  
+    const hex = [toHex(r), toHex(g), toHex(b)].join("");
+    return `#${hex}`;
+  }
 
-  templateName.characters = pluginMessage.name;
-  templateUserName.characters = pluginMessage.username;
-  templateDescription.characters = pluginMessage.description;
-  numLikes.characters = (Math.floor(Math.random() * 1000) + 1).toString();
+  if (figma.command === "import") {
+    figma.showUI(__uiFiles__["import"], {
+      width: 500,
+      height: 500,
+      themeColors: true,
+    });
+  } else if (figma.command === "export") {
+    figma.showUI(__uiFiles__["export"], {
+      width: 500,
+      height: 500,
+      themeColors: true,
+    });
+  }
 
-  nodes.push(newPost);
+  // figma.closePlugin()
 
-  figma.viewport.scrollAndZoomIntoView(nodes);
 
-  figma.closePlugin();
-};
