@@ -3,9 +3,9 @@
 
 
 "@figma/plugin-typings@*":
-  version "1.84.0"
-  resolved "https://registry.yarnpkg.com/@figma/plugin-typings/-/plugin-typings-1.84.0.tgz#d06ed8bece2cbbda8f3d96abfccfe7b822163c05"
-  integrity sha512-YisOp7S2y10BWMLBJY2DazCjRpg/0m03dDlS3nKhpw2alFQSXNuSLLd+y4pbnJpOXJMnInZdbikr/7JxudjsYg==
+  version "1.85.0"
+  resolved "https://registry.yarnpkg.com/@figma/plugin-typings/-/plugin-typings-1.85.0.tgz#dfbe722ebffd3e84e070b3a75c62ba0a932c7c56"
+  integrity sha512-o6oJ4FrjBIVbwteJ6DbCvjU8UXbN9QzA5FgjNosTE+HpwntPSEbpVFPkgEFuI1G/GhJXrhXR8/QcuBabwZ+JLw==
 
 figma-plugin-ds@^1.0.1:
   version "1.0.1"
