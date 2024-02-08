@@ -3,48 +3,48 @@
 {
   "Base Color": {
     "$type": "color",
-    "$value": "#NaNNaNNaN"
+    "$value": "{Orange.50}"
   },
   "Accent Color": {
     "$type": "color",
-    "$value": "#NaNNaNNaN"
+    "$value": "{Cyan.600}"
   },
   "Main Color": {
     "$type": "color",
-    "$value": "#NaNNaNNaN"
+    "$value": "{Cyan.950}"
   },
   "Body": {
     "Background": {
       "$type": "color",
-      "$value": "#NaNNaNNaN"
+      "$value": "{Base Color}"
     },
     "Heading2": {
       "$type": "color",
-      "$value": "#NaNNaNNaN"
+      "$value": "{Accent Color}"
     }
   },
   "Header": {
     "Logo": {
       "$type": "color",
-      "$value": "#NaNNaNNaN"
+      "$value": "{Accent Color}"
     }
   },
   "Button": {
     "Background": {
       "$type": "color",
-      "$value": "#NaNNaNNaN"
+      "$value": "{Accent Color}"
     }
   },
   "Point": {
     "Background": {
       "$type": "color",
-      "$value": "#NaNNaNNaN"
+      "$value": "{Main Color}"
     }
   },
   "Footer": {
     "Background": {
       "$type": "color",
-      "$value": "#NaNNaNNaN"
+      "$value": "{Main Color}"
     }
   }
 }
@@ -113,47 +113,47 @@
     "Text": {
       "Text01": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray100}"
       },
       "Text02": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray70}"
       },
       "Text03": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray60}"
       },
       "TextPlaceholder": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray40}"
       },
       "TextOnColor": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.White}"
       }
     },
     "Link": {
       "Link01": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Blue.Blue50}"
       },
       "Link02": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray50}"
       }
     },
     "Border": {
       "UiBorder01": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray30}"
       },
       "UiBorder02": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray40}"
       },
       "UiBorder03": {
         "$type": "color",
-        "$value": "#NaNNaNNaN"
+        "$value": "{Colors.Gray.Gray50}"
       }
     }
   },
