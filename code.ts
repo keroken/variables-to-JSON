@@ -27,20 +27,15 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
       if (variable !== null) {
         const { name, resolvedType, valuesByMode } = variable;
         const value = valuesByMode[mode.modeId];
-        console.log('value : ', value);
-        console.log(typeof(value));
-        console.log(resolvedType);
         if (value !== undefined && ["COLOR", "FLOAT"].includes(resolvedType)) {
           let obj:{[key:string]: any} = file.body;
           name.split("/").forEach((groupName) => {
             obj[groupName] = obj[groupName] || {};
             obj = obj[groupName];
           });
-          console.log(obj);
           obj.$type = resolvedType === "COLOR" ? "color" : "number";
-          if (value === "VARIABLE_ALIAS") {
-            console.log('value get : ', figma.variables.getVariableById(variable.id));
-            obj.$value = `{${figma.variables.getVariableById(variable.id)?.name.replace(/\//g, ".")}}`;
+          if (Object.values(value)[0] === "VARIABLE_ALIAS") {
+            obj.$value = `{${figma.variables.getVariableById(Object.values(value)[1])?.name.replace(/\//g, ".")}}`;
           } else if (resolvedType === 'COLOR') {
             obj.$value = rgbToHex(value);
           } else {
