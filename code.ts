@@ -24,21 +24,28 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
     const file = { fileName: `${name}.${mode.name}.tokens.json`, body: {} };
     variableIds.forEach((variableId) => {
       const variable = figma.variables.getVariableById(variableId);
-      const value = variable?.valuesByMode[mode.modeId];
-      
-      if (value !== undefined && variable !== null && ["COLOR", "FLOAT"].includes(variable.resolvedType)) {
-        let obj:{[key:string]: any} = file.body;
-        name.split("/").forEach((groupName) => {
-          obj[groupName] = obj[groupName] || {};
-          obj = obj[groupName];
-        });
-        obj.$type = variable?.resolvedType === "COLOR" ? "color" : "number";
-        if (value === 'VariableAlias') {
-          obj.$value = `{${figma.variables.getVariableById(variable.id)?.name.replace(/\//g, ".")}}`;
-        } else if (variable.resolvedType === 'COLOR') {
-          obj.$value = rgbToHex(value);
-        } else {
-          obj.$value = value;
+      if (variable !== null) {
+        const { name, resolvedType, valuesByMode } = variable;
+        const value = valuesByMode[mode.modeId];
+        console.log('value : ', value);
+        console.log(typeof(value));
+        console.log(resolvedType);
+        if (value !== undefined && ["COLOR", "FLOAT"].includes(resolvedType)) {
+          let obj:{[key:string]: any} = file.body;
+          name.split("/").forEach((groupName) => {
+            obj[groupName] = obj[groupName] || {};
+            obj = obj[groupName];
+          });
+          console.log(obj);
+          obj.$type = resolvedType === "COLOR" ? "color" : "number";
+          if (value === "VARIABLE_ALIAS") {
+            console.log('value get : ', figma.variables.getVariableById(variable.id));
+            obj.$value = `{${figma.variables.getVariableById(variable.id)?.name.replace(/\//g, ".")}}`;
+          } else if (resolvedType === 'COLOR') {
+            obj.$value = rgbToHex(value);
+          } else {
+            obj.$value = value;
+          }
         }
       }
     });
