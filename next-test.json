@@ -1,0 +1,49 @@
+{
+  "Colors": {
+    "Gray": {
+      "Gray100": {
+        "$type": "color",
+        "$value": "#252626"
+      },
+      "Gray90": {
+        "$type": "color",
+        "$value": "#313434"
+      },
+      "Gray80": {
+        "$type": "color",
+        "$value": "#4c504f"
+      },
+      "Gray70": {
+        "$type": "color",
+        "$value": "#727878"
+      },
+      "Gray60": {
+        "$type": "color",
+        "$value": "#848a8d"
+      },
+      "Gray50": {
+        "$type": "color",
+        "$value": "#919497"
+      }
+    }
+  },
+  "Tokens": {
+    "Text": {
+      "Text_Primary": {
+        "$type": "color",
+        "$value": "{Colors.Gray.Gray100}",
+        "$description": "Primary text, Body copy, Headers"
+      },
+      "Text_Secondary": {
+        "$type": "color",
+        "$value": "{Colors.Gray.Gray70}",
+        "$description": "Secondary text, Input labels"
+      },
+      "Text_Tertiary": {
+        "$type": "color",
+        "$value": "{Colors.Gray.Gray50}",
+        "$description": "Tertiary text"
+      }
+    }
+  }
+}
