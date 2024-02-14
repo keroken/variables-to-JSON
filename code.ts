@@ -12,7 +12,7 @@ type TokenType = {
 };
 
 type AliasType = {
-  key: any;
+  key: string;
   type: 'VARIABLE_ALIAS',
   valueKey: string;
 };
@@ -20,8 +20,8 @@ type AliasType = {
 type VariableType = {
   collection: VariableCollection;
   modeId: string;
-  name: string;
-  key: any;
+  name?: string;
+  key: string;
   valueKey: string;
   tokens: {[key:string]: any};
 };
@@ -38,9 +38,9 @@ function createToken({collection, modeId, type, name, value}: TokenType) {
   return token;
 }
 
-function createVariable({collection, modeId, key, name, valueKey, tokens}: VariableType) {
+function createVariable({collection, modeId, key, valueKey, tokens}: VariableType) {
   const token = tokens[valueKey];
-  return createToken({id: key, collection, modeId, type: token.type, name: name, value: { type: "VARIABLE_ALIAS", id: `${token.id}` } });
+  return createToken({id: key, collection, modeId, type: 'COLOR', name: key, value: { type: "VARIABLE_ALIAS", id: `${token.id}` } });
 }
 
 type JSONfile = {
@@ -55,7 +55,6 @@ function importJSONFile({ fileName, body }: JSONfile) {
   const tokens = {};
 
   Object.entries(json).forEach(([key, object]) => {
-    console.log(key, object);
     traverseToken({
       collection,
       modeId,
@@ -127,7 +126,7 @@ function traverseToken({
         .replace(/\./g, "/")
         .replace(/[\{\}]/g, "");
       if (tokens[valueKey]) {
-        tokens[key] = createVariable({collection, modeId, name: key, key, valueKey, tokens});
+        tokens[key] = createVariable({collection, modeId, key, valueKey, tokens});
       } else {
         aliases[key] = {
           key,
