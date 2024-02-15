@@ -8,6 +8,7 @@ type TokenType = {
   modeId: string;
   type: VariableResolvedDataType;
   name: string;
+  description?: string;
   value: VariableValue;
 };
 
@@ -23,6 +24,7 @@ type VariableType = {
   name?: string;
   key: string;
   valueKey: string;
+  description?: string;
   tokens: {[key:string]: any};
 };
 
@@ -32,15 +34,16 @@ function createCollection(name: string) {
   return { collection, modeId };
 }
 
-function createToken({collection, modeId, type, name, value}: TokenType) {
+function createToken({collection, modeId, type, name, description, value}: TokenType) {
   const token = figma.variables.createVariable(name, collection.id, type);
+  token.description = description ?? '';
   token.setValueForMode(modeId, value);
   return token;
 }
 
-function createVariable({collection, modeId, key, valueKey, tokens}: VariableType) {
+function createVariable({collection, modeId, key, valueKey, description, tokens}: VariableType) {
   const token = tokens[valueKey];
-  return createToken({id: key, collection, modeId, type: 'COLOR', name: key, value: { type: "VARIABLE_ALIAS", id: `${token.id}` } });
+  return createToken({id: key, collection, modeId, type: 'COLOR', name: key, description, value: { type: "VARIABLE_ALIAS", id: `${token.id}` } });
 }
 
 type JSONfile = {
@@ -78,9 +81,9 @@ type AliasProccessed = {
 function processAliases({ collection, modeId, aliases, tokens }: AliasProccessed) {
   const aliases_ = Object.values(aliases);
   let generations = aliases_.length;
-  while (aliases.length && generations > 0) {
+  while (aliases_.length && generations > 0) {
     for (let i = 0; i < aliases_.length; i++) {
-      const { key, type, valueKey } = aliases[i];
+      const { key, type, valueKey } = aliases_[i];
       const token = tokens[valueKey];
       if (token) {
         aliases_.splice(i, 1);
@@ -126,7 +129,7 @@ function traverseToken({
         .replace(/\./g, "/")
         .replace(/[\{\}]/g, "");
       if (tokens[valueKey]) {
-        tokens[key] = createVariable({collection, modeId, key, valueKey, tokens});
+        tokens[key] = createVariable({collection, modeId, key, valueKey, description: object.$description, tokens});
       } else {
         aliases[key] = {
           key,
@@ -209,7 +212,7 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
             obj = obj[groupName];
           });
           obj.$type = resolvedType === "COLOR" ? "color" : "number";
-          obj.$description = description ? description : '';
+          obj.$description = description ?? '';
           if (Object.values(value)[0] === "VARIABLE_ALIAS") {
             obj.$value = `{${figma.variables.getVariableById(Object.values(value)[1])?.name.replace(/\//g, ".")}}`;
           } else if (resolvedType === 'COLOR') {
