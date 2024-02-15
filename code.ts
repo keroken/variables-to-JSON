@@ -200,7 +200,7 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
     variableIds.forEach((variableId) => {
       const variable = figma.variables.getVariableById(variableId);
       if (variable !== null) {
-        const { name, resolvedType, valuesByMode } = variable;
+        const { name, description, resolvedType, valuesByMode } = variable;
         const value = valuesByMode[mode.modeId];
         if (value !== undefined && ["COLOR", "FLOAT"].includes(resolvedType)) {
           let obj:{[key:string]: any} = file.body;
@@ -209,6 +209,7 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
             obj = obj[groupName];
           });
           obj.$type = resolvedType === "COLOR" ? "color" : "number";
+          obj.$description = description ? description : '';
           if (Object.values(value)[0] === "VARIABLE_ALIAS") {
             obj.$value = `{${figma.variables.getVariableById(Object.values(value)[1])?.name.replace(/\//g, ".")}}`;
           } else if (resolvedType === 'COLOR') {
