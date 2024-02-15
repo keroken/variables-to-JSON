@@ -3,26 +3,32 @@
     "Gray": {
       "Gray100": {
         "$type": "color",
+        "$description": "",
         "$value": "#252626"
       },
       "Gray90": {
         "$type": "color",
+        "$description": "",
         "$value": "#313434"
       },
       "Gray80": {
         "$type": "color",
+        "$description": "",
         "$value": "#4c504f"
       },
       "Gray70": {
         "$type": "color",
+        "$description": "",
         "$value": "#727878"
       },
       "Gray60": {
         "$type": "color",
+        "$description": "",
         "$value": "#848a8d"
       },
       "Gray50": {
         "$type": "color",
+        "$description": "",
         "$value": "#919497"
       }
     }
@@ -31,18 +37,18 @@
     "Text": {
       "Text_Primary": {
         "$type": "color",
-        "$value": "{Colors.Gray.Gray100}",
-        "$description": "Primary text, Body copy, Headers"
+        "$description": "Primary text, Body copy, Headers",
+        "$value": "{Colors.Gray.Gray100}"
       },
       "Text_Secondary": {
         "$type": "color",
-        "$value": "{Colors.Gray.Gray70}",
-        "$description": "Secondary text, Input labels"
+        "$description": "Secondary text, Input labels",
+        "$value": "{Colors.Gray.Gray70}"
       },
       "Text_Tertiary": {
         "$type": "color",
-        "$value": "{Colors.Gray.Gray50}",
-        "$description": "Tertiary text"
+        "$description": "Tertiary text",
+        "$value": "{Colors.Gray.Gray50}"
       }
     }
   }
