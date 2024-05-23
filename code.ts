@@ -95,7 +95,7 @@ function processAliases({ collection, modeId, aliases, tokens }: AliasProccessed
 }
 
 function isAlias(value: VariableValue) {
-  return value.toString().trim().charAt(0) === "{";
+  return value.toString().trim().charAt(0) === "$";
 }
 
 type TokenForTraverse = {
@@ -119,7 +119,7 @@ function traverseToken({
 }: TokenForTraverse) {
   type = type || object.type;
   // if key is a meta field, move on
-  if (key.charAt(0) === "$") {
+  if (key === "type" || key === "description" || key === "value") {
     return;
   }
   if (object.value !== undefined) {
@@ -127,7 +127,7 @@ function traverseToken({
       const valueKey = object.value
         .trim()
         .replace(/\./g, "/")
-        .replace(/[\{\}]/g, "");
+        .replace(/[\$\"]/g, "");
       if (tokens[valueKey]) {
         tokens[key] = createVariable({collection, modeId, key, valueKey, description: object.description, tokens});
       } else {
@@ -158,7 +158,7 @@ function traverseToken({
     }
   } else {
     Object.entries(object).forEach(([key2, object2]) => {
-      if (key2.charAt(0) !== "$") {
+      if (key2 !== "type" && key2 !== "description" && key2 !== "value") {
         traverseToken({
           collection,
           modeId,
