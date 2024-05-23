@@ -153,6 +153,14 @@ function traverseToken({
         name: key,
         value: object.value
       });
+    } else if (type === "string") {
+      tokens[key] = createToken({
+        collection,
+        modeId,
+        type: "STRING",
+        name: key,
+        value: object.value
+      });
     } else {
       console.log("unsupported type", type, object);
     }
