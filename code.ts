@@ -216,7 +216,7 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
           if (Object.values(value)[0] === "VARIABLE_ALIAS") {
             obj.value = `$${figma.variables.getVariableById(Object.values(value)[1])?.name.replace(/\//g, ".")}`;
           } else if (resolvedType === 'COLOR') {
-            obj.value = rgbToHex(value);
+            obj.value = rgbToHex(value as RGBA);
           } else {
             obj.value = value;
           }
@@ -228,8 +228,8 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
   return files;
 }
 
-function rgbToHex( colorValue: VariableValue) {
-  const { r, g, b, a } = colorValue as any;
+function rgbToHex( colorValue: RGBA) {
+  const { r, g, b, a } = colorValue;
   if (a !== 1 && a !== undefined) {
     return `rgba(${[r, g, b]
       .map((n) => Math.round(n * 255))
