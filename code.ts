@@ -61,7 +61,7 @@ function importJSONFile({ fileName, body }: JSONfile) {
     traverseToken({
       collection,
       modeId,
-      type: json.$type,
+      type: json.type,
       key,
       object,
       tokens,
@@ -117,19 +117,19 @@ function traverseToken({
   tokens,
   aliases,
 }: TokenForTraverse) {
-  type = type || object.$type;
+  type = type || object.type;
   // if key is a meta field, move on
   if (key.charAt(0) === "$") {
     return;
   }
-  if (object.$value !== undefined) {
-    if (isAlias(object.$value)) {
-      const valueKey = object.$value
+  if (object.value !== undefined) {
+    if (isAlias(object.value)) {
+      const valueKey = object.value
         .trim()
         .replace(/\./g, "/")
         .replace(/[\{\}]/g, "");
       if (tokens[valueKey]) {
-        tokens[key] = createVariable({collection, modeId, key, valueKey, description: object.$description, tokens});
+        tokens[key] = createVariable({collection, modeId, key, valueKey, description: object.description, tokens});
       } else {
         aliases[key] = {
           key,
@@ -143,7 +143,7 @@ function traverseToken({
         modeId,
         type: "COLOR",
         name: key,
-        value: parseColor(object.$value)
+        value: parseColor(object.value)
       });
     } else if (type === "number") {
       tokens[key] = createToken({
@@ -151,7 +151,7 @@ function traverseToken({
         modeId,
         type: "FLOAT",
         name: key,
-        value: object.$value
+        value: object.value
       });
     } else {
       console.log("unsupported type", type, object);
@@ -205,20 +205,20 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
       if (variable !== null) {
         const { name, description, resolvedType, valuesByMode } = variable;
         const value = valuesByMode[mode.modeId];
-        if (value !== undefined && ["COLOR", "FLOAT"].includes(resolvedType)) {
+        if (value !== undefined && ["COLOR", "FLOAT", "STRING"].includes(resolvedType)) {
           let obj:{[key:string]: any} = file.body;
           name.split("/").forEach((groupName) => {
             obj[groupName] = obj[groupName] || {};
             obj = obj[groupName];
           });
-          obj.$type = resolvedType === "COLOR" ? "color" : "number";
-          obj.$description = description ?? '';
+          obj.type = resolvedType === "COLOR" ? "color" : resolvedType === "FLOAT" ? "number" : "string";
+          obj.description = description ?? '';
           if (Object.values(value)[0] === "VARIABLE_ALIAS") {
-            obj.$value = `{${figma.variables.getVariableById(Object.values(value)[1])?.name.replace(/\//g, ".")}}`;
+            obj.value = `$${figma.variables.getVariableById(Object.values(value)[1])?.name.replace(/\//g, ".")}`;
           } else if (resolvedType === 'COLOR') {
-            obj.$value = rgbToHex(value);
+            obj.value = rgbToHex(value);
           } else {
-            obj.$value = value;
+            obj.value = value;
           }
         }
       }
