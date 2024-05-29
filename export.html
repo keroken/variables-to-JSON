@@ -103,9 +103,8 @@
         selectedCollection = e.target.value;
       });
     } else if (pluginMessage.type === "EXPORT_RESULT") {
-      const output = pluginMessage.file.length > 1 ? pluginMessage.file : pluginMessage.file[0];
       document.querySelector("textarea").innerHTML = 
-        `${JSON.stringify(output, null, 2)}`
+        `${JSON.stringify(pluginMessage.file, null, 2)}`
     }
 
     document.getElementById("export").addEventListener("click", () => {

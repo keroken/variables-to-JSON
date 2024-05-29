@@ -7,8 +7,8 @@ figma.ui.onmessage = async (e) => {
   if (e.type === 'EXPORT') {
     await exportToJSON(e.data);
   } else if (e.type === 'IMPORT') {
-    const { fileName, body } = e;
-    importJSONFile({ fileName, body });
+    const { collectionName, body } = e;
+    importJSONFile({ collectionName, body });
   }
 }
 
@@ -64,7 +64,7 @@ function createCollection(name: string) {
 }
 
 function createToken({collection, modeId, type, name, description, value}: TokenType) {
-  const token = figma.variables.createVariable(name, collection.id, type);
+  const token = figma.variables.createVariable(name, collection, type);
   token.description = description ?? '';
   token.setValueForMode(modeId, value);
   return token;
@@ -76,13 +76,13 @@ function createVariable({collection, modeId, key, valueKey, description, tokens}
 }
 
 type JSONfile = {
-  fileName: string;
+  collectionName: string;
   body: string;
 };
 
-function importJSONFile({ fileName, body }: JSONfile) {
+function importJSONFile({ collectionName, body }: JSONfile) {
   const json = JSON.parse(body);
-  const { collection, modeId } = createCollection(fileName);
+  const { collection, modeId } = createCollection(collectionName);
   const aliases = {};
   const tokens = {};
 
@@ -215,13 +215,18 @@ function traverseToken({
 async function exportToJSON(selectedCollection: string) {
   const collection = await figma.variables.getVariableCollectionByIdAsync(selectedCollection);
   if (collection !== null) {
+    console.log("collection", collection);
     const file = processCollection(collection);
     figma.ui.postMessage({ type: "EXPORT_RESULT", file });
   }
 }
 
 function processCollection({ name, modes, variableIds }: VariableCollection) {
-  let files: {}[] = [];
+  let files: { collectionName: string, modes: {}[]} = {
+    collectionName: "",
+    modes: []
+  };
+  files.collectionName = name;
   modes.forEach((mode) => {
     let file: { mode: string, tokens: {}} = { mode: mode.name, tokens: {}};
     variableIds.forEach((variableId) => {
@@ -247,7 +252,7 @@ function processCollection({ name, modes, variableIds }: VariableCollection) {
         }
       }
     });
-    files.push(file);
+    files.modes.push(file);
   });
   return files;
 }
