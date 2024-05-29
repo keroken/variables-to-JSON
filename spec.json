@@ -1,0 +1,67 @@
+{
+  "collectionName": "Spec",
+  "modes": [
+    {
+      "mode": "lg",
+      "tokens": {
+        "Container": {
+          "Max-width": {
+            "type": "number",
+            "description": "",
+            "value": 1200
+          }
+        },
+        "2 Column": {
+          "Min-width": {
+            "type": "number",
+            "description": "",
+            "value": 310
+          }
+        },
+        "Body": {
+          "Min-width": {
+            "type": "number",
+            "description": "",
+            "value": 960
+          },
+          "Max-width": {
+            "type": "number",
+            "description": "",
+            "value": 9999
+          }
+        }
+      }
+    },
+    {
+      "mode": "md",
+      "tokens": {
+        "Container": {
+          "Max-width": {
+            "type": "number",
+            "description": "",
+            "value": 1200
+          }
+        },
+        "2 Column": {
+          "Min-width": {
+            "type": "number",
+            "description": "",
+            "value": 310
+          }
+        },
+        "Body": {
+          "Min-width": {
+            "type": "number",
+            "description": "",
+            "value": 360
+          },
+          "Max-width": {
+            "type": "number",
+            "description": "",
+            "value": 959
+          }
+        }
+      }
+    }
+  ]
+}

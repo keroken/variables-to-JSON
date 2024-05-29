@@ -1,1198 +1,1206 @@
 {
-  "Colors": {
-    "Black": {
-      "type": "color",
-      "description": "",
-      "value": "#000000"
-    },
-    "White": {
-      "type": "color",
-      "description": "",
-      "value": "#ffffff"
-    },
-    "Blue": {
-      "Blue10": {
-        "type": "color",
-        "description": "",
-        "value": "#f1f7fd"
-      },
-      "Blue20": {
-        "type": "color",
-        "description": "",
-        "value": "#d9eafb"
-      },
-      "Blue30": {
-        "type": "color",
-        "description": "",
-        "value": "#9fcbf5"
-      },
-      "Blue40": {
-        "type": "color",
-        "description": "",
-        "value": "#60a8ef"
-      },
-      "Blue50": {
-        "type": "color",
-        "description": "",
-        "value": "#177ee5"
-      },
-      "Blue60": {
-        "type": "color",
-        "description": "",
-        "value": "#1571ce"
-      },
-      "Blue70": {
-        "type": "color",
-        "description": "",
-        "value": "#1366b9"
-      },
-      "Blue80": {
-        "type": "color",
-        "description": "",
-        "value": "#115ca7"
-      },
-      "Blue90": {
-        "type": "color",
-        "description": "",
-        "value": "#0f5396"
-      },
-      "Blue100": {
-        "type": "color",
-        "description": "",
-        "value": "#0e4b87"
-      }
-    },
-    "Gray": {
-      "Gray05": {
-        "type": "color",
-        "description": "",
-        "value": "#fafafa"
-      },
-      "Gray10": {
-        "type": "color",
-        "description": "",
-        "value": "#f3f4f5"
-      },
-      "Gray20": {
-        "type": "color",
-        "description": "",
-        "value": "#e9eaeb"
-      },
-      "Gray30": {
-        "type": "color",
-        "description": "",
-        "value": "#dedfe0"
-      },
-      "Gray40": {
-        "type": "color",
-        "description": "",
-        "value": "#cacccd"
-      },
-      "Gray50": {
-        "type": "color",
-        "description": "",
-        "value": "#a4a5a6"
-      },
-      "Gray60": {
-        "type": "color",
-        "description": "",
-        "value": "#838789"
-      },
-      "Gray70": {
-        "type": "color",
-        "description": "",
-        "value": "#6f7476"
-      },
-      "Gray80": {
-        "type": "color",
-        "description": "",
-        "value": "#5c6366"
-      },
-      "Gray90": {
-        "type": "color",
-        "description": "",
-        "value": "#454a4d"
-      },
-      "Gray100": {
-        "type": "color",
-        "description": "",
-        "value": "#2f3233"
-      }
-    },
-    "Red": {
-      "Red10": {
-        "type": "color",
-        "description": "",
-        "value": "#fceff3"
-      },
-      "Red20": {
-        "type": "color",
-        "description": "",
-        "value": "#f9e0e6"
-      },
-      "Red30": {
-        "type": "color",
-        "description": "",
-        "value": "#f1b1c1"
-      },
-      "Red40": {
-        "type": "color",
-        "description": "",
-        "value": "#e67490"
-      },
-      "Red50": {
-        "type": "color",
-        "description": "",
-        "value": "#d92b57"
-      },
-      "Red60": {
-        "type": "color",
-        "description": "",
-        "value": "#c6244d"
-      },
-      "Red70": {
-        "type": "color",
-        "description": "",
-        "value": "#b22045"
-      },
-      "Red80": {
-        "type": "color",
-        "description": "",
-        "value": "#a01d3e"
-      },
-      "Red90": {
-        "type": "color",
-        "description": "",
-        "value": "#901a38"
-      },
-      "Red100": {
-        "type": "color",
-        "description": "",
-        "value": "#821732"
-      }
-    },
-    "Yellow": {
-      "Yellow10": {
-        "type": "color",
-        "description": "",
-        "value": "#fffadc"
-      },
-      "Yellow20": {
-        "type": "color",
-        "description": "",
-        "value": "#fff6c4"
-      },
-      "Yellow30": {
-        "type": "color",
-        "description": "",
-        "value": "#ffef9b"
-      },
-      "Yellow40": {
-        "type": "color",
-        "description": "",
-        "value": "#ffe976"
-      },
-      "Yellow50": {
-        "type": "color",
-        "description": "",
-        "value": "#ffd919"
-      },
-      "Yellow60": {
-        "type": "color",
-        "description": "",
-        "value": "#fcd200"
-      },
-      "Yellow70": {
-        "type": "color",
-        "description": "",
-        "value": "#e3bd00"
-      },
-      "Yellow80": {
-        "type": "color",
-        "description": "",
-        "value": "#ccaa00"
-      },
-      "Yellow90": {
-        "type": "color",
-        "description": "",
-        "value": "#b89900"
-      },
-      "Yellow100": {
-        "type": "color",
-        "description": "",
-        "value": "#a68a00"
-      }
-    },
-    "Green": {
-      "Green10": {
-        "type": "color",
-        "description": "",
-        "value": "#ecfbf4"
-      },
-      "Green20": {
-        "type": "color",
-        "description": "",
-        "value": "#d0f4e3"
-      },
-      "Green30": {
-        "type": "color",
-        "description": "",
-        "value": "#a1eac7"
-      },
-      "Green40": {
-        "type": "color",
-        "description": "",
-        "value": "#69dda5"
-      },
-      "Green50": {
-        "type": "color",
-        "description": "",
-        "value": "#2dc87d"
-      },
-      "Green60": {
-        "type": "color",
-        "description": "",
-        "value": "#29b471"
-      },
-      "Green70": {
-        "type": "color",
-        "description": "",
-        "value": "#25a266"
-      },
-      "Green80": {
-        "type": "color",
-        "description": "",
-        "value": "#21925c"
-      },
-      "Green90": {
-        "type": "color",
-        "description": "",
-        "value": "#1e8353"
-      },
-      "Green100": {
-        "type": "color",
-        "description": "",
-        "value": "#1b764b"
-      }
-    },
-    "Purple": {
-      "Purple10": {
-        "type": "color",
-        "description": "",
-        "value": "#f3f3ff"
-      },
-      "Purple20": {
-        "type": "color",
-        "description": "",
-        "value": "#e0e1ff"
-      },
-      "Purple30": {
-        "type": "color",
-        "description": "",
-        "value": "#c1c3ff"
-      },
-      "Purple40": {
-        "type": "color",
-        "description": "",
-        "value": "#989cff"
-      },
-      "Purple50": {
-        "type": "color",
-        "description": "",
-        "value": "#7379ff"
-      },
-      "Purple60": {
-        "type": "color",
-        "description": "",
-        "value": "#4e56ff"
-      },
-      "Purple70": {
-        "type": "color",
-        "description": "",
-        "value": "#3f46df"
-      },
-      "Purple80": {
-        "type": "color",
-        "description": "",
-        "value": "#3338be"
-      },
-      "Purple90": {
-        "type": "color",
-        "description": "",
-        "value": "#2b30aa"
-      },
-      "Purple100": {
-        "type": "color",
-        "description": "",
-        "value": "#22278e"
-      }
-    },
-    "BlueGreen": {
-      "BlueGreen10": {
-        "type": "color",
-        "description": "",
-        "value": "#ecfcfd"
-      },
-      "BlueGreen20": {
-        "type": "color",
-        "description": "",
-        "value": "#cff6fa"
-      },
-      "BlueGreen30": {
-        "type": "color",
-        "description": "",
-        "value": "#9feef5"
-      },
-      "BlueGreen40": {
-        "type": "color",
-        "description": "",
-        "value": "#60e3ef"
-      },
-      "BlueGreen50": {
-        "type": "color",
-        "description": "",
-        "value": "#17d4e5"
-      },
-      "BlueGreen60": {
-        "type": "color",
-        "description": "",
-        "value": "#15bfce"
-      },
-      "BlueGreen70": {
-        "type": "color",
-        "description": "",
-        "value": "#13acb9"
-      },
-      "BlueGreen80": {
-        "type": "color",
-        "description": "",
-        "value": "#119ba7"
-      },
-      "BlueGreen90": {
-        "type": "color",
-        "description": "",
-        "value": "#0f8c96"
-      },
-      "BlueGreen100": {
-        "type": "color",
-        "description": "",
-        "value": "#0e7e87"
+  "collectionName": "zen-colors",
+  "modes": [
+    {
+      "mode": "Mode 1",
+      "tokens": {
+        "Colors": {
+          "Black": {
+            "type": "color",
+            "description": "",
+            "value": "#000000"
+          },
+          "White": {
+            "type": "color",
+            "description": "",
+            "value": "#ffffff"
+          },
+          "Blue": {
+            "Blue10": {
+              "type": "color",
+              "description": "",
+              "value": "#f1f7fd"
+            },
+            "Blue20": {
+              "type": "color",
+              "description": "",
+              "value": "#d9eafb"
+            },
+            "Blue30": {
+              "type": "color",
+              "description": "",
+              "value": "#9fcbf5"
+            },
+            "Blue40": {
+              "type": "color",
+              "description": "",
+              "value": "#60a8ef"
+            },
+            "Blue50": {
+              "type": "color",
+              "description": "",
+              "value": "#177ee5"
+            },
+            "Blue60": {
+              "type": "color",
+              "description": "",
+              "value": "#1571ce"
+            },
+            "Blue70": {
+              "type": "color",
+              "description": "",
+              "value": "#1366b9"
+            },
+            "Blue80": {
+              "type": "color",
+              "description": "",
+              "value": "#115ca7"
+            },
+            "Blue90": {
+              "type": "color",
+              "description": "",
+              "value": "#0f5396"
+            },
+            "Blue100": {
+              "type": "color",
+              "description": "",
+              "value": "#0e4b87"
+            }
+          },
+          "Gray": {
+            "Gray05": {
+              "type": "color",
+              "description": "",
+              "value": "#fafafa"
+            },
+            "Gray10": {
+              "type": "color",
+              "description": "",
+              "value": "#f3f4f5"
+            },
+            "Gray20": {
+              "type": "color",
+              "description": "",
+              "value": "#e9eaeb"
+            },
+            "Gray30": {
+              "type": "color",
+              "description": "",
+              "value": "#dedfe0"
+            },
+            "Gray40": {
+              "type": "color",
+              "description": "",
+              "value": "#cacccd"
+            },
+            "Gray50": {
+              "type": "color",
+              "description": "",
+              "value": "#a4a5a6"
+            },
+            "Gray60": {
+              "type": "color",
+              "description": "",
+              "value": "#838789"
+            },
+            "Gray70": {
+              "type": "color",
+              "description": "",
+              "value": "#6f7476"
+            },
+            "Gray80": {
+              "type": "color",
+              "description": "",
+              "value": "#5c6366"
+            },
+            "Gray90": {
+              "type": "color",
+              "description": "",
+              "value": "#454a4d"
+            },
+            "Gray100": {
+              "type": "color",
+              "description": "",
+              "value": "#2f3233"
+            }
+          },
+          "Red": {
+            "Red10": {
+              "type": "color",
+              "description": "",
+              "value": "#fceff3"
+            },
+            "Red20": {
+              "type": "color",
+              "description": "",
+              "value": "#f9e0e6"
+            },
+            "Red30": {
+              "type": "color",
+              "description": "",
+              "value": "#f1b1c1"
+            },
+            "Red40": {
+              "type": "color",
+              "description": "",
+              "value": "#e67490"
+            },
+            "Red50": {
+              "type": "color",
+              "description": "",
+              "value": "#d92b57"
+            },
+            "Red60": {
+              "type": "color",
+              "description": "",
+              "value": "#c6244d"
+            },
+            "Red70": {
+              "type": "color",
+              "description": "",
+              "value": "#b22045"
+            },
+            "Red80": {
+              "type": "color",
+              "description": "",
+              "value": "#a01d3e"
+            },
+            "Red90": {
+              "type": "color",
+              "description": "",
+              "value": "#901a38"
+            },
+            "Red100": {
+              "type": "color",
+              "description": "",
+              "value": "#821732"
+            }
+          },
+          "Yellow": {
+            "Yellow10": {
+              "type": "color",
+              "description": "",
+              "value": "#fffadc"
+            },
+            "Yellow20": {
+              "type": "color",
+              "description": "",
+              "value": "#fff6c4"
+            },
+            "Yellow30": {
+              "type": "color",
+              "description": "",
+              "value": "#ffef9b"
+            },
+            "Yellow40": {
+              "type": "color",
+              "description": "",
+              "value": "#ffe976"
+            },
+            "Yellow50": {
+              "type": "color",
+              "description": "",
+              "value": "#ffd919"
+            },
+            "Yellow60": {
+              "type": "color",
+              "description": "",
+              "value": "#fcd200"
+            },
+            "Yellow70": {
+              "type": "color",
+              "description": "",
+              "value": "#e3bd00"
+            },
+            "Yellow80": {
+              "type": "color",
+              "description": "",
+              "value": "#ccaa00"
+            },
+            "Yellow90": {
+              "type": "color",
+              "description": "",
+              "value": "#b89900"
+            },
+            "Yellow100": {
+              "type": "color",
+              "description": "",
+              "value": "#a68a00"
+            }
+          },
+          "Green": {
+            "Green10": {
+              "type": "color",
+              "description": "",
+              "value": "#ecfbf4"
+            },
+            "Green20": {
+              "type": "color",
+              "description": "",
+              "value": "#d0f4e3"
+            },
+            "Green30": {
+              "type": "color",
+              "description": "",
+              "value": "#a1eac7"
+            },
+            "Green40": {
+              "type": "color",
+              "description": "",
+              "value": "#69dda5"
+            },
+            "Green50": {
+              "type": "color",
+              "description": "",
+              "value": "#2dc87d"
+            },
+            "Green60": {
+              "type": "color",
+              "description": "",
+              "value": "#29b471"
+            },
+            "Green70": {
+              "type": "color",
+              "description": "",
+              "value": "#25a266"
+            },
+            "Green80": {
+              "type": "color",
+              "description": "",
+              "value": "#21925c"
+            },
+            "Green90": {
+              "type": "color",
+              "description": "",
+              "value": "#1e8353"
+            },
+            "Green100": {
+              "type": "color",
+              "description": "",
+              "value": "#1b764b"
+            }
+          },
+          "Purple": {
+            "Purple10": {
+              "type": "color",
+              "description": "",
+              "value": "#f3f3ff"
+            },
+            "Purple20": {
+              "type": "color",
+              "description": "",
+              "value": "#e0e1ff"
+            },
+            "Purple30": {
+              "type": "color",
+              "description": "",
+              "value": "#c1c3ff"
+            },
+            "Purple40": {
+              "type": "color",
+              "description": "",
+              "value": "#989cff"
+            },
+            "Purple50": {
+              "type": "color",
+              "description": "",
+              "value": "#7379ff"
+            },
+            "Purple60": {
+              "type": "color",
+              "description": "",
+              "value": "#4e56ff"
+            },
+            "Purple70": {
+              "type": "color",
+              "description": "",
+              "value": "#3f46df"
+            },
+            "Purple80": {
+              "type": "color",
+              "description": "",
+              "value": "#3338be"
+            },
+            "Purple90": {
+              "type": "color",
+              "description": "",
+              "value": "#2b30aa"
+            },
+            "Purple100": {
+              "type": "color",
+              "description": "",
+              "value": "#22278e"
+            }
+          },
+          "BlueGreen": {
+            "BlueGreen10": {
+              "type": "color",
+              "description": "",
+              "value": "#ecfcfd"
+            },
+            "BlueGreen20": {
+              "type": "color",
+              "description": "",
+              "value": "#cff6fa"
+            },
+            "BlueGreen30": {
+              "type": "color",
+              "description": "",
+              "value": "#9feef5"
+            },
+            "BlueGreen40": {
+              "type": "color",
+              "description": "",
+              "value": "#60e3ef"
+            },
+            "BlueGreen50": {
+              "type": "color",
+              "description": "",
+              "value": "#17d4e5"
+            },
+            "BlueGreen60": {
+              "type": "color",
+              "description": "",
+              "value": "#15bfce"
+            },
+            "BlueGreen70": {
+              "type": "color",
+              "description": "",
+              "value": "#13acb9"
+            },
+            "BlueGreen80": {
+              "type": "color",
+              "description": "",
+              "value": "#119ba7"
+            },
+            "BlueGreen90": {
+              "type": "color",
+              "description": "",
+              "value": "#0f8c96"
+            },
+            "BlueGreen100": {
+              "type": "color",
+              "description": "",
+              "value": "#0e7e87"
+            }
+          }
+        },
+        "Tokens": {
+          "Text": {
+            "Text01": {
+              "type": "color",
+              "description": "Primary text, Body copy, Headers",
+              "value": "$Colors.Gray.Gray100"
+            },
+            "Text02": {
+              "type": "color",
+              "description": "Secondary text, Input labels",
+              "value": "$Colors.Gray.Gray70"
+            },
+            "Text03": {
+              "type": "color",
+              "description": "Tertiary text",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "TextPlaceholder": {
+              "type": "color",
+              "description": "Placeholder text",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "TextOnColor": {
+              "type": "color",
+              "description": "Text on interactive colors",
+              "value": "$Colors.White"
+            },
+            "TextBlack": {
+              "type": "color",
+              "description": "Title text",
+              "value": "$Colors.Black"
+            },
+            "Text01Dark": {
+              "type": "color",
+              "description": "Primary text, Body copy, Headers - Dark",
+              "value": "$Colors.White"
+            },
+            "Text02Dark": {
+              "type": "color",
+              "description": "Secondary text, Input labels - Dark",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "Text03Dark": {
+              "type": "color",
+              "description": "Tertiary text - Dark",
+              "value": "$Colors.Gray.Gray50"
+            },
+            "TextPlaceholderDark": {
+              "type": "color",
+              "description": "Placeholder text - Dark",
+              "value": "$Colors.Gray.Gray60"
+            }
+          },
+          "Link": {
+            "Link01": {
+              "type": "color",
+              "description": "Primary links",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "Link01Dark": {
+              "type": "color",
+              "description": "Primary links - Dark",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "Link02": {
+              "type": "color",
+              "description": "Secondary links",
+              "value": "$Colors.Gray.Gray50"
+            },
+            "Link02Dark": {
+              "type": "color",
+              "description": "Secondary links - Dark",
+              "value": "$Colors.Gray.Gray50"
+            }
+          },
+          "Border": {
+            "UiBorder01": {
+              "type": "color",
+              "description": "List border color, Container border",
+              "value": "$Colors.Gray.Gray30"
+            },
+            "UiBorder01Dark": {
+              "type": "color",
+              "description": "List border color, Container border - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "UiBorder02": {
+              "type": "color",
+              "description": "Button border, Input border",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "UiBorder02Dark": {
+              "type": "color",
+              "description": "Button border, Input border - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "UiBorder03": {
+              "type": "color",
+              "description": "Checkbox border, Input border",
+              "value": "$Colors.Gray.Gray50"
+            },
+            "UiBorder03Dark": {
+              "type": "color",
+              "description": "Checkbox border, Input border - Dark",
+              "value": "$Colors.Gray.Gray60"
+            }
+          },
+          "Background": {
+            "UiBackground01": {
+              "type": "color",
+              "description": "Default page background",
+              "value": "$Colors.White"
+            },
+            "UiBackground02": {
+              "type": "color",
+              "description": "Side navigation background",
+              "value": "$Colors.Gray.Gray10"
+            },
+            "UiBackground02Light": {
+              "type": "color",
+              "description": "Side navigation background in lighter hue",
+              "value": "$Colors.Gray.Gray05"
+            },
+            "UiBackground01Dark": {
+              "type": "color",
+              "description": "Default page background - Dark",
+              "value": "$Colors.Gray.Gray100"
+            },
+            "UiBackground02Dark": {
+              "type": "color",
+              "description": "Side navigation background - Dark",
+              "value": "$Colors.Gray.Gray90"
+            },
+            "UiBackground02Blue": {
+              "type": "color",
+              "description": "Side navigation background, checked background - Blue",
+              "value": "$Colors.Blue.Blue10"
+            },
+            "UiBackgroundBlue": {
+              "type": "color",
+              "description": "info message background",
+              "value": "$Colors.Blue.Blue10"
+            },
+            "UiBackgroundBlueDark": {
+              "type": "color",
+              "description": "info message background - Dark",
+              "value": "$Colors.Blue.Blue80"
+            },
+            "UiBackgroundGray": {
+              "type": "color",
+              "description": "message background",
+              "value": "$Colors.Gray.Gray10"
+            },
+            "UiBackgroundGrayDark": {
+              "type": "color",
+              "description": "message background - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "UiBackgroundSuccess": {
+              "type": "color",
+              "description": "Success message background",
+              "value": "$Colors.Green.Green10"
+            },
+            "UiBackgroundSuccessDark": {
+              "type": "color",
+              "description": "Success message background - Dark",
+              "value": "$Colors.Green.Green90"
+            },
+            "UiBackgroundError": {
+              "type": "color",
+              "description": "Error message background",
+              "value": "$Colors.Red.Red10"
+            },
+            "UiBackgroundErrorDark": {
+              "type": "color",
+              "description": "Error message background - Dark",
+              "value": "$Colors.Red.Red80"
+            },
+            "UiBackgroundWarning": {
+              "type": "color",
+              "description": "Warning message background",
+              "value": "$Colors.Yellow.Yellow10"
+            },
+            "UiBackgroundWarningDark": {
+              "type": "color",
+              "description": "Warning message background - Dark",
+              "value": "$Colors.Yellow.Yellow100"
+            },
+            "UiBackgroundTooltip": {
+              "type": "color",
+              "description": "ToolTip background",
+              "value": "$Colors.Gray.Gray100"
+            },
+            "UiBackgroundTooltipDark": {
+              "type": "color",
+              "description": "ToolTip background - Dark",
+              "value": "$Colors.Gray.Gray10"
+            },
+            "UiBackgroundOverlayGray": {
+              "type": "color",
+              "description": "",
+              "value": "rgba(47, 50, 51, 0.5000)"
+            },
+            "UiBackgroundOverlayBlack": {
+              "type": "color",
+              "description": "",
+              "value": "rgba(0, 0, 0, 0.6000)"
+            }
+          },
+          "Icon": {
+            "Icon01": {
+              "type": "color",
+              "description": "Primary icons",
+              "value": "$Colors.Gray.Gray70"
+            },
+            "Icon01Dark": {
+              "type": "color",
+              "description": "Primary icons - Dark",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "Icon02": {
+              "type": "color",
+              "description": "Secondary icons",
+              "value": "$Colors.Gray.Gray50"
+            },
+            "Icon02Dark": {
+              "type": "color",
+              "description": "Secondary icons - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "Icon03": {
+              "type": "color",
+              "description": "Tertiary icons, icon button default state",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "Icon03Dark": {
+              "type": "color",
+              "description": "Tertiary icons, icon button default state - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "IconOnColor": {
+              "type": "color",
+              "description": "Icons on interactive colors",
+              "value": "$Colors.White"
+            }
+          },
+          "Interactive": {
+            "Interactive01": {
+              "type": "color",
+              "description": "Primary Interactive color, Primary buttons",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "InteractiveBg01": {
+              "type": "color",
+              "description": "Primary Interactive color on background, Primary fill buttons",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "Interactive01Dark": {
+              "type": "color",
+              "description": "Primary Interactive color, Primary buttons - Dark",
+              "value": "$Colors.Blue.Blue30"
+            },
+            "InteractiveBg01Dark": {
+              "type": "color",
+              "description": "Primary Interactive color on background, Primary fill buttons - Dark",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "Interactive02": {
+              "type": "color",
+              "description": "Secondary Interactive color, Secondary buttons",
+              "value": "$Colors.Gray.Gray70"
+            },
+            "Interactive02Dark": {
+              "type": "color",
+              "description": "Secondary Interactive color, Secondary buttons -Dark",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "Interactive03": {
+              "type": "color",
+              "description": "Tertiary button, Selected elements, Active elements, Accent icon",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "Interactive03Dark": {
+              "type": "color",
+              "description": "Tertiary button, Selected elements, Active elements, Accent icon -Dark",
+              "value": "$Colors.Gray.Gray60"
+            }
+          },
+          "Field": {
+            "FieldInput": {
+              "type": "color",
+              "description": "Default input fields",
+              "value": "$Colors.White"
+            },
+            "FieldInputDark": {
+              "type": "color",
+              "description": "Default input fields - Dark",
+              "value": "$Colors.Gray.Gray100"
+            },
+            "FieldSearch": {
+              "type": "color",
+              "description": "Search input fields",
+              "value": "$Colors.White"
+            },
+            "FieldSearchDark": {
+              "type": "color",
+              "description": "Search input fields - Dark",
+              "value": "$Colors.Gray.Gray80"
+            }
+          },
+          "Focus": {
+            "Focus": {
+              "type": "color",
+              "description": "Focus border, Focus underline",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "FocusDark": {
+              "type": "color",
+              "description": "Focus border, Focus underline - Dark",
+              "value": "$Colors.Blue.Blue50"
+            }
+          },
+          "Hover": {
+            "Hover01": {
+              "type": "color",
+              "description": "$interactive-01 hover",
+              "value": "$Colors.Blue.Blue70"
+            },
+            "Hover01Dark": {
+              "type": "color",
+              "description": "$interactive-01 hover - Dark",
+              "value": "$Colors.Blue.Blue70"
+            },
+            "Hover02": {
+              "type": "color",
+              "description": "$interactive-02 hover",
+              "value": "$Colors.Gray.Gray20"
+            },
+            "Hover02Dark": {
+              "type": "color",
+              "description": "$interactive-02 hover - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "Hover02Background": {
+              "type": "color",
+              "description": "$interactive-02 hover on background",
+              "value": "$Colors.Gray.Gray20"
+            },
+            "Hover02BackgroundDark": {
+              "type": "color",
+              "description": "$interactive-02 hover on background - Dark",
+              "value": "$Colors.Gray.Gray90"
+            },
+            "HoverUi": {
+              "type": "color",
+              "description": "hover ui background",
+              "value": "$Colors.Gray.Gray20"
+            },
+            "HoverUiDark": {
+              "type": "color",
+              "description": "hover ui background - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "HoverUi02": {
+              "type": "color",
+              "description": "hover ui background with lighter color",
+              "value": "$Colors.Gray.Gray10"
+            },
+            "HoverUi02Dark": {
+              "type": "color",
+              "description": "hover ui background with darker color",
+              "value": "$Colors.Gray.Gray90"
+            },
+            "HoverUiBorder": {
+              "type": "color",
+              "description": "hover ui background - Dark",
+              "value": "$Colors.Gray.Gray70"
+            },
+            "HoverUiBorderDark": {
+              "type": "color",
+              "description": "hover ui background - Dark",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "HoverSelectedUi": {
+              "type": "color",
+              "description": "Checkbox border color",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "HoverSelectedUiDark": {
+              "type": "color",
+              "description": "Checkbox border color - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "HoverDanger": {
+              "type": "color",
+              "description": "Danger hover",
+              "value": "$Colors.Red.Red70"
+            },
+            "HoverDangerDark": {
+              "type": "color",
+              "description": "Danger hover - Dark",
+              "value": "$Colors.Red.Red70"
+            },
+            "HoverError": {
+              "type": "color",
+              "description": "Error hover",
+              "value": "$Colors.Red.Red70"
+            },
+            "HoverErrorDark": {
+              "type": "color",
+              "description": "Error hover - Dark",
+              "value": "$Colors.Red.Red20"
+            },
+            "HoverInput": {
+              "type": "color",
+              "description": "hover input",
+              "value": "$Colors.Gray.Gray70"
+            },
+            "HoverInputDark": {
+              "type": "color",
+              "description": "hover input - Dark",
+              "value": "$Colors.Gray.Gray50"
+            },
+            "HoverLink01": {
+              "type": "color",
+              "description": "hover primary link",
+              "value": "$Colors.Blue.Blue70"
+            },
+            "HoverLink01Dark": {
+              "type": "color",
+              "description": "hover primary link - Dark",
+              "value": "$Colors.Blue.Blue30"
+            },
+            "HoverLink02": {
+              "type": "color",
+              "description": "hover secondary link",
+              "value": "$Colors.Gray.Gray70"
+            },
+            "HoverLink02Dark": {
+              "type": "color",
+              "description": "hover secondary link - Dark",
+              "value": "$Colors.Gray.Gray30"
+            }
+          },
+          "Active": {
+            "Active01": {
+              "type": "color",
+              "description": "$interactive-01 active",
+              "value": "$Colors.Blue.Blue100"
+            },
+            "Active01Dark": {
+              "type": "color",
+              "description": "$interactive-01 active - Dark",
+              "value": "$Colors.Blue.Blue100"
+            },
+            "Active02": {
+              "type": "color",
+              "description": "$interactive-02 active",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "Active02Dark": {
+              "type": "color",
+              "description": "$interactive-02 active - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "Active02Background": {
+              "type": "color",
+              "description": "$interactive-02 active on background",
+              "value": "$Colors.Gray.Gray30"
+            },
+            "Active02BackgroundDark": {
+              "type": "color",
+              "description": "$interactive-02 active on background - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "ActiveUi": {
+              "type": "color",
+              "description": "Active List background color",
+              "value": "$Colors.Blue.Blue20"
+            },
+            "ActiveUiDark": {
+              "type": "color",
+              "description": "Active List background color - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "ActiveSelectedUi": {
+              "type": "color",
+              "description": "Checkbox background color, Select border color",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "ActiveSelectedUiDark": {
+              "type": "color",
+              "description": "Checkbox background color, Select border color - Dark",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "ActiveDanger": {
+              "type": "color",
+              "description": "Danger active",
+              "value": "$Colors.Red.Red100"
+            },
+            "ActiveDangerDark": {
+              "type": "color",
+              "description": "Danger active - Dark",
+              "value": "$Colors.Red.Red100"
+            },
+            "ActiveInput": {
+              "type": "color",
+              "description": "Active input",
+              "value": "$Colors.Blue.Blue70"
+            },
+            "ActiveInputDark": {
+              "type": "color",
+              "description": "Active input - Dark",
+              "value": "$Colors.Gray.Gray40"
+            },
+            "ActiveLink01": {
+              "type": "color",
+              "description": "active primary link",
+              "value": "$Colors.Blue.Blue100"
+            },
+            "ActiveLink01Dark": {
+              "type": "color",
+              "description": "active primary link - Dark",
+              "value": "$Colors.Blue.Blue20"
+            },
+            "ActiveLink02": {
+              "type": "color",
+              "description": "active secondary link",
+              "value": "$Colors.Gray.Gray100"
+            },
+            "ActiveLink02Dark": {
+              "type": "color",
+              "description": "active secondary link - Dark",
+              "value": "$Colors.Gray.Gray20"
+            }
+          },
+          "Selected": {
+            "SelectedUi": {
+              "type": "color",
+              "description": "Selected List Navigation",
+              "value": "$Colors.Blue.Blue20"
+            },
+            "SelectedUiDark": {
+              "type": "color",
+              "description": "Selected List Navigation - Dark",
+              "value": "$Colors.Blue.Blue70"
+            },
+            "SelectedUiGray": {
+              "type": "color",
+              "description": "Selected List Navigation Gray",
+              "value": "$Colors.Gray.Gray30"
+            },
+            "SelectedUiGrayDark": {
+              "type": "color",
+              "description": "Selected List Navigation Gray - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "SelectedUiOnColor": {
+              "type": "color",
+              "description": "",
+              "value": "$Colors.White"
+            },
+            "SelectedUiBorder": {
+              "type": "color",
+              "description": "Selected Button Border",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "SelectedUiBorderDark": {
+              "type": "color",
+              "description": "Selected Button Border - Dark",
+              "value": "$Colors.Blue.Blue30"
+            }
+          },
+          "Disabled": {
+            "Disabled01": {
+              "type": "color",
+              "description": "Disabled text, Disabled border",
+              "value": "$Colors.Gray.Gray30"
+            },
+            "Disabled01Dark": {
+              "type": "color",
+              "description": "Disabled text, Disabled border - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "Disabled02": {
+              "type": "color",
+              "description": "Text on disabled button",
+              "value": "$Colors.Gray.Gray10"
+            },
+            "Disabled02Dark": {
+              "type": "color",
+              "description": "Text on disabled button - Dark",
+              "value": "$Colors.Gray.Gray60"
+            },
+            "Disabled03": {
+              "type": "color",
+              "description": "Inverse Disabled fields",
+              "value": "$Colors.Gray.Gray90"
+            },
+            "Disabled04": {
+              "type": "color",
+              "description": "Inverse Disabled primary button",
+              "value": "$Colors.Blue.Blue100"
+            },
+            "DisabledLink01": {
+              "type": "color",
+              "description": "Disabled primary links",
+              "value": "$Colors.Gray.Gray30"
+            },
+            "DisabledLink02": {
+              "type": "color",
+              "description": "Disabled secondary links",
+              "value": "$Colors.Gray.Gray30"
+            },
+            "DisabledLink01Dark": {
+              "type": "color",
+              "description": "Disabled primary links - Dark",
+              "value": "$Colors.Blue.Blue80"
+            },
+            "DisabledLink02Dark": {
+              "type": "color",
+              "description": "Disabled secondary links - Dark",
+              "value": "$Colors.Gray.Gray80"
+            },
+            "DisabledOn": {
+              "type": "color",
+              "description": "Disabled on state",
+              "value": "$Colors.Blue.Blue20"
+            },
+            "DisabledOnDark": {
+              "type": "color",
+              "description": "Disabled on state - Dark",
+              "value": "$Colors.Blue.Blue30"
+            }
+          },
+          "Support": {
+            "SupportError": {
+              "type": "color",
+              "description": "Error text, Icon with error, error element border",
+              "value": "$Colors.Red.Red50"
+            },
+            "SupportErrorLight": {
+              "type": "color",
+              "description": "",
+              "value": "#f4bfcd"
+            },
+            "SupportErrorDark": {
+              "type": "color",
+              "description": "Error text, Icon with error, error element border - Dark",
+              "value": "$Colors.Red.Red40"
+            },
+            "SupportSuccess": {
+              "type": "color",
+              "description": "Success text, button background, button border",
+              "value": "$Colors.Green.Green50"
+            },
+            "SupportSuccessLight": {
+              "type": "color",
+              "description": "",
+              "value": "#ccf4e1"
+            },
+            "SupportSuccessDark": {
+              "type": "color",
+              "description": "Success text, button background, button border - Dark",
+              "value": "$Colors.Green.Green40"
+            },
+            "SupportInfo": {
+              "type": "color",
+              "description": "Information text, button background, button border",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "SupportInfoLight": {
+              "type": "color",
+              "description": "",
+              "value": "#b9d8f7"
+            },
+            "SupportInfoDark": {
+              "type": "color",
+              "description": "Information text, button background, button border - Dark",
+              "value": "$Colors.Blue.Blue50"
+            },
+            "SupportWarning": {
+              "type": "color",
+              "description": "Warning text, Icon with error, error element border",
+              "value": "$Colors.Yellow.Yellow60"
+            },
+            "SupportWarningLight": {
+              "type": "color",
+              "description": "",
+              "value": "#fff4ba"
+            },
+            "SupportWarningDark": {
+              "type": "color",
+              "description": "Warning text, Icon with error, error element border - Dark",
+              "value": "$Colors.Yellow.Yellow40"
+            },
+            "SupportDanger": {
+              "type": "color",
+              "description": "Danger text, button background, button border",
+              "value": "$Colors.Red.Red50"
+            },
+            "SupportDangerLight": {
+              "type": "color",
+              "description": "",
+              "value": "#f4bfcd"
+            },
+            "SupportDangerDark": {
+              "type": "color",
+              "description": "Danger text, button background, button border - Dark",
+              "value": "$Colors.Red.Red40"
+            }
+          }
+        },
+        "User": {
+          "Red": {
+            "type": "color",
+            "description": "",
+            "value": "#f88282"
+          },
+          "Pink": {
+            "type": "color",
+            "description": "",
+            "value": "#f191dd"
+          },
+          "Purple": {
+            "type": "color",
+            "description": "",
+            "value": "#c88ae5"
+          },
+          "Turquoise": {
+            "type": "color",
+            "description": "",
+            "value": "#86cee5"
+          },
+          "RoyalBlue": {
+            "type": "color",
+            "description": "",
+            "value": "#93b3f2"
+          },
+          "Blue": {
+            "type": "color",
+            "description": "",
+            "value": "#7ecaf5"
+          },
+          "Aquamarine": {
+            "type": "color",
+            "description": "",
+            "value": "#79ebda"
+          },
+          "YellowGreen": {
+            "type": "color",
+            "description": "",
+            "value": "#8ae58b"
+          },
+          "Yellow": {
+            "type": "color",
+            "description": "",
+            "value": "#f3c90a"
+          },
+          "Orange": {
+            "type": "color",
+            "description": "",
+            "value": "#f9b12c"
+          },
+          "RedLight": {
+            "type": "color",
+            "description": "",
+            "value": "#fddada"
+          },
+          "PinkLight": {
+            "type": "color",
+            "description": "",
+            "value": "#fbdef5"
+          },
+          "PurpleLight": {
+            "type": "color",
+            "description": "",
+            "value": "#efdcf7"
+          },
+          "TurquoiseLight": {
+            "type": "color",
+            "description": "",
+            "value": "#dbf0f7"
+          },
+          "RoyalBlueLight": {
+            "type": "color",
+            "description": "",
+            "value": "#dfe8fb"
+          },
+          "BlueLight": {
+            "type": "color",
+            "description": "",
+            "value": "#d8effc"
+          },
+          "AquamarineLight": {
+            "type": "color",
+            "description": "",
+            "value": "#d7f9f4"
+          },
+          "YellowGreenLight": {
+            "type": "color",
+            "description": "",
+            "value": "#dcf7dc"
+          },
+          "YellowLight": {
+            "type": "color",
+            "description": "",
+            "value": "#fcefb6"
+          },
+          "OrangeLight": {
+            "type": "color",
+            "description": "",
+            "value": "#fde8c0"
+          }
+        }
       }
     }
-  },
-  "Tokens": {
-    "Text": {
-      "Text01": {
-        "type": "color",
-        "description": "Primary text, Body copy, Headers",
-        "value": "$Colors.Gray.Gray100"
-      },
-      "Text02": {
-        "type": "color",
-        "description": "Secondary text, Input labels",
-        "value": "$Colors.Gray.Gray70"
-      },
-      "Text03": {
-        "type": "color",
-        "description": "Tertiary text",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "TextPlaceholder": {
-        "type": "color",
-        "description": "Placeholder text",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "TextOnColor": {
-        "type": "color",
-        "description": "Text on interactive colors",
-        "value": "$Colors.White"
-      },
-      "TextBlack": {
-        "type": "color",
-        "description": "Title text",
-        "value": "$Colors.Black"
-      },
-      "Text01Dark": {
-        "type": "color",
-        "description": "Primary text, Body copy, Headers - Dark",
-        "value": "$Colors.White"
-      },
-      "Text02Dark": {
-        "type": "color",
-        "description": "Secondary text, Input labels - Dark",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "Text03Dark": {
-        "type": "color",
-        "description": "Tertiary text - Dark",
-        "value": "$Colors.Gray.Gray50"
-      },
-      "TextPlaceholderDark": {
-        "type": "color",
-        "description": "Placeholder text - Dark",
-        "value": "$Colors.Gray.Gray60"
-      }
-    },
-    "Link": {
-      "Link01": {
-        "type": "color",
-        "description": "Primary links",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "Link01Dark": {
-        "type": "color",
-        "description": "Primary links - Dark",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "Link02": {
-        "type": "color",
-        "description": "Secondary links",
-        "value": "$Colors.Gray.Gray50"
-      },
-      "Link02Dark": {
-        "type": "color",
-        "description": "Secondary links - Dark",
-        "value": "$Colors.Gray.Gray50"
-      }
-    },
-    "Border": {
-      "UiBorder01": {
-        "type": "color",
-        "description": "List border color, Container border",
-        "value": "$Colors.Gray.Gray30"
-      },
-      "UiBorder01Dark": {
-        "type": "color",
-        "description": "List border color, Container border - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "UiBorder02": {
-        "type": "color",
-        "description": "Button border, Input border",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "UiBorder02Dark": {
-        "type": "color",
-        "description": "Button border, Input border - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "UiBorder03": {
-        "type": "color",
-        "description": "Checkbox border, Input border",
-        "value": "$Colors.Gray.Gray50"
-      },
-      "UiBorder03Dark": {
-        "type": "color",
-        "description": "Checkbox border, Input border - Dark",
-        "value": "$Colors.Gray.Gray60"
-      }
-    },
-    "Background": {
-      "UiBackground01": {
-        "type": "color",
-        "description": "Default page background",
-        "value": "$Colors.White"
-      },
-      "UiBackground02": {
-        "type": "color",
-        "description": "Side navigation background",
-        "value": "$Colors.Gray.Gray10"
-      },
-      "UiBackground02Light": {
-        "type": "color",
-        "description": "Side navigation background in lighter hue",
-        "value": "$Colors.Gray.Gray05"
-      },
-      "UiBackground01Dark": {
-        "type": "color",
-        "description": "Default page background - Dark",
-        "value": "$Colors.Gray.Gray100"
-      },
-      "UiBackground02Dark": {
-        "type": "color",
-        "description": "Side navigation background - Dark",
-        "value": "$Colors.Gray.Gray90"
-      },
-      "UiBackground02Blue": {
-        "type": "color",
-        "description": "Side navigation background, checked background - Blue",
-        "value": "$Colors.Blue.Blue10"
-      },
-      "UiBackgroundBlue": {
-        "type": "color",
-        "description": "info message background",
-        "value": "$Colors.Blue.Blue10"
-      },
-      "UiBackgroundBlueDark": {
-        "type": "color",
-        "description": "info message background - Dark",
-        "value": "$Colors.Blue.Blue80"
-      },
-      "UiBackgroundGray": {
-        "type": "color",
-        "description": "message background",
-        "value": "$Colors.Gray.Gray10"
-      },
-      "UiBackgroundGrayDark": {
-        "type": "color",
-        "description": "message background - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "UiBackgroundSuccess": {
-        "type": "color",
-        "description": "Success message background",
-        "value": "$Colors.Green.Green10"
-      },
-      "UiBackgroundSuccessDark": {
-        "type": "color",
-        "description": "Success message background - Dark",
-        "value": "$Colors.Green.Green90"
-      },
-      "UiBackgroundError": {
-        "type": "color",
-        "description": "Error message background",
-        "value": "$Colors.Red.Red10"
-      },
-      "UiBackgroundErrorDark": {
-        "type": "color",
-        "description": "Error message background - Dark",
-        "value": "$Colors.Red.Red80"
-      },
-      "UiBackgroundWarning": {
-        "type": "color",
-        "description": "Warning message background",
-        "value": "$Colors.Yellow.Yellow10"
-      },
-      "UiBackgroundWarningDark": {
-        "type": "color",
-        "description": "Warning message background - Dark",
-        "value": "$Colors.Yellow.Yellow100"
-      },
-      "UiBackgroundTooltip": {
-        "type": "color",
-        "description": "ToolTip background",
-        "value": "$Colors.Gray.Gray100"
-      },
-      "UiBackgroundTooltipDark": {
-        "type": "color",
-        "description": "ToolTip background - Dark",
-        "value": "$Colors.Gray.Gray10"
-      },
-      "UiBackgroundOverlayGray": {
-        "type": "color",
-        "description": "",
-        "value": "rgba(47, 50, 51, 0.5000)"
-      },
-      "UiBackgroundOverlayBlack": {
-        "type": "color",
-        "description": "",
-        "value": "rgba(0, 0, 0, 0.6000)"
-      }
-    },
-    "Icon": {
-      "Icon01": {
-        "type": "color",
-        "description": "Primary icons",
-        "value": "$Colors.Gray.Gray70"
-      },
-      "Icon01Dark": {
-        "type": "color",
-        "description": "Primary icons - Dark",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "Icon02": {
-        "type": "color",
-        "description": "Secondary icons",
-        "value": "$Colors.Gray.Gray50"
-      },
-      "Icon02Dark": {
-        "type": "color",
-        "description": "Secondary icons - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "Icon03": {
-        "type": "color",
-        "description": "Tertiary icons, icon button default state",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "Icon03Dark": {
-        "type": "color",
-        "description": "Tertiary icons, icon button default state - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "IconOnColor": {
-        "type": "color",
-        "description": "Icons on interactive colors",
-        "value": "$Colors.White"
-      }
-    },
-    "Interactive": {
-      "Interactive01": {
-        "type": "color",
-        "description": "Primary Interactive color, Primary buttons",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "InteractiveBg01": {
-        "type": "color",
-        "description": "Primary Interactive color on background, Primary fill buttons",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "Interactive01Dark": {
-        "type": "color",
-        "description": "Primary Interactive color, Primary buttons - Dark",
-        "value": "$Colors.Blue.Blue30"
-      },
-      "InteractiveBg01Dark": {
-        "type": "color",
-        "description": "Primary Interactive color on background, Primary fill buttons - Dark",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "Interactive02": {
-        "type": "color",
-        "description": "Secondary Interactive color, Secondary buttons",
-        "value": "$Colors.Gray.Gray70"
-      },
-      "Interactive02Dark": {
-        "type": "color",
-        "description": "Secondary Interactive color, Secondary buttons -Dark",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "Interactive03": {
-        "type": "color",
-        "description": "Tertiary button, Selected elements, Active elements, Accent icon",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "Interactive03Dark": {
-        "type": "color",
-        "description": "Tertiary button, Selected elements, Active elements, Accent icon -Dark",
-        "value": "$Colors.Gray.Gray60"
-      }
-    },
-    "Field": {
-      "FieldInput": {
-        "type": "color",
-        "description": "Default input fields",
-        "value": "$Colors.White"
-      },
-      "FieldInputDark": {
-        "type": "color",
-        "description": "Default input fields - Dark",
-        "value": "$Colors.Gray.Gray100"
-      },
-      "FieldSearch": {
-        "type": "color",
-        "description": "Search input fields",
-        "value": "$Colors.White"
-      },
-      "FieldSearchDark": {
-        "type": "color",
-        "description": "Search input fields - Dark",
-        "value": "$Colors.Gray.Gray80"
-      }
-    },
-    "Focus": {
-      "Focus": {
-        "type": "color",
-        "description": "Focus border, Focus underline",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "FocusDark": {
-        "type": "color",
-        "description": "Focus border, Focus underline - Dark",
-        "value": "$Colors.Blue.Blue50"
-      }
-    },
-    "Hover": {
-      "Hover01": {
-        "type": "color",
-        "description": "$interactive-01 hover",
-        "value": "$Colors.Blue.Blue70"
-      },
-      "Hover01Dark": {
-        "type": "color",
-        "description": "$interactive-01 hover - Dark",
-        "value": "$Colors.Blue.Blue70"
-      },
-      "Hover02": {
-        "type": "color",
-        "description": "$interactive-02 hover",
-        "value": "$Colors.Gray.Gray20"
-      },
-      "Hover02Dark": {
-        "type": "color",
-        "description": "$interactive-02 hover - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "Hover02Background": {
-        "type": "color",
-        "description": "$interactive-02 hover on background",
-        "value": "$Colors.Gray.Gray20"
-      },
-      "Hover02BackgroundDark": {
-        "type": "color",
-        "description": "$interactive-02 hover on background - Dark",
-        "value": "$Colors.Gray.Gray90"
-      },
-      "HoverUi": {
-        "type": "color",
-        "description": "hover ui background",
-        "value": "$Colors.Gray.Gray20"
-      },
-      "HoverUiDark": {
-        "type": "color",
-        "description": "hover ui background - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "HoverUi02": {
-        "type": "color",
-        "description": "hover ui background with lighter color",
-        "value": "$Colors.Gray.Gray10"
-      },
-      "HoverUi02Dark": {
-        "type": "color",
-        "description": "hover ui background with darker color",
-        "value": "$Colors.Gray.Gray90"
-      },
-      "HoverUiBorder": {
-        "type": "color",
-        "description": "hover ui background - Dark",
-        "value": "$Colors.Gray.Gray70"
-      },
-      "HoverUiBorderDark": {
-        "type": "color",
-        "description": "hover ui background - Dark",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "HoverSelectedUi": {
-        "type": "color",
-        "description": "Checkbox border color",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "HoverSelectedUiDark": {
-        "type": "color",
-        "description": "Checkbox border color - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "HoverDanger": {
-        "type": "color",
-        "description": "Danger hover",
-        "value": "$Colors.Red.Red70"
-      },
-      "HoverDangerDark": {
-        "type": "color",
-        "description": "Danger hover - Dark",
-        "value": "$Colors.Red.Red70"
-      },
-      "HoverError": {
-        "type": "color",
-        "description": "Error hover",
-        "value": "$Colors.Red.Red70"
-      },
-      "HoverErrorDark": {
-        "type": "color",
-        "description": "Error hover - Dark",
-        "value": "$Colors.Red.Red20"
-      },
-      "HoverInput": {
-        "type": "color",
-        "description": "hover input",
-        "value": "$Colors.Gray.Gray70"
-      },
-      "HoverInputDark": {
-        "type": "color",
-        "description": "hover input - Dark",
-        "value": "$Colors.Gray.Gray50"
-      },
-      "HoverLink01": {
-        "type": "color",
-        "description": "hover primary link",
-        "value": "$Colors.Blue.Blue70"
-      },
-      "HoverLink01Dark": {
-        "type": "color",
-        "description": "hover primary link - Dark",
-        "value": "$Colors.Blue.Blue30"
-      },
-      "HoverLink02": {
-        "type": "color",
-        "description": "hover secondary link",
-        "value": "$Colors.Gray.Gray70"
-      },
-      "HoverLink02Dark": {
-        "type": "color",
-        "description": "hover secondary link - Dark",
-        "value": "$Colors.Gray.Gray30"
-      }
-    },
-    "Active": {
-      "Active01": {
-        "type": "color",
-        "description": "$interactive-01 active",
-        "value": "$Colors.Blue.Blue100"
-      },
-      "Active01Dark": {
-        "type": "color",
-        "description": "$interactive-01 active - Dark",
-        "value": "$Colors.Blue.Blue100"
-      },
-      "Active02": {
-        "type": "color",
-        "description": "$interactive-02 active",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "Active02Dark": {
-        "type": "color",
-        "description": "$interactive-02 active - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "Active02Background": {
-        "type": "color",
-        "description": "$interactive-02 active on background",
-        "value": "$Colors.Gray.Gray30"
-      },
-      "Active02BackgroundDark": {
-        "type": "color",
-        "description": "$interactive-02 active on background - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "ActiveUi": {
-        "type": "color",
-        "description": "Active List background color",
-        "value": "$Colors.Blue.Blue20"
-      },
-      "ActiveUiDark": {
-        "type": "color",
-        "description": "Active List background color - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "ActiveSelectedUi": {
-        "type": "color",
-        "description": "Checkbox background color, Select border color",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "ActiveSelectedUiDark": {
-        "type": "color",
-        "description": "Checkbox background color, Select border color - Dark",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "ActiveDanger": {
-        "type": "color",
-        "description": "Danger active",
-        "value": "$Colors.Red.Red100"
-      },
-      "ActiveDangerDark": {
-        "type": "color",
-        "description": "Danger active - Dark",
-        "value": "$Colors.Red.Red100"
-      },
-      "ActiveInput": {
-        "type": "color",
-        "description": "Active input",
-        "value": "$Colors.Blue.Blue70"
-      },
-      "ActiveInputDark": {
-        "type": "color",
-        "description": "Active input - Dark",
-        "value": "$Colors.Gray.Gray40"
-      },
-      "ActiveLink01": {
-        "type": "color",
-        "description": "active primary link",
-        "value": "$Colors.Blue.Blue100"
-      },
-      "ActiveLink01Dark": {
-        "type": "color",
-        "description": "active primary link - Dark",
-        "value": "$Colors.Blue.Blue20"
-      },
-      "ActiveLink02": {
-        "type": "color",
-        "description": "active secondary link",
-        "value": "$Colors.Gray.Gray100"
-      },
-      "ActiveLink02Dark": {
-        "type": "color",
-        "description": "active secondary link - Dark",
-        "value": "$Colors.Gray.Gray20"
-      }
-    },
-    "Selected": {
-      "SelectedUi": {
-        "type": "color",
-        "description": "Selected List Navigation",
-        "value": "$Colors.Blue.Blue20"
-      },
-      "SelectedUiDark": {
-        "type": "color",
-        "description": "Selected List Navigation - Dark",
-        "value": "$Colors.Blue.Blue70"
-      },
-      "SelectedUiGray": {
-        "type": "color",
-        "description": "Selected List Navigation Gray",
-        "value": "$Colors.Gray.Gray30"
-      },
-      "SelectedUiGrayDark": {
-        "type": "color",
-        "description": "Selected List Navigation Gray - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "SelectedUiOnColor": {
-        "type": "color",
-        "description": "",
-        "value": "$Colors.White"
-      },
-      "SelectedUiBorder": {
-        "type": "color",
-        "description": "Selected Button Border",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "SelectedUiBorderDark": {
-        "type": "color",
-        "description": "Selected Button Border - Dark",
-        "value": "$Colors.Blue.Blue30"
-      }
-    },
-    "Disabled": {
-      "Disabled01": {
-        "type": "color",
-        "description": "Disabled text, Disabled border",
-        "value": "$Colors.Gray.Gray30"
-      },
-      "Disabled01Dark": {
-        "type": "color",
-        "description": "Disabled text, Disabled border - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "Disabled02": {
-        "type": "color",
-        "description": "Text on disabled button",
-        "value": "$Colors.Gray.Gray10"
-      },
-      "Disabled02Dark": {
-        "type": "color",
-        "description": "Text on disabled button - Dark",
-        "value": "$Colors.Gray.Gray60"
-      },
-      "Disabled03": {
-        "type": "color",
-        "description": "Inverse Disabled fields",
-        "value": "$Colors.Gray.Gray90"
-      },
-      "Disabled04": {
-        "type": "color",
-        "description": "Inverse Disabled primary button",
-        "value": "$Colors.Blue.Blue100"
-      },
-      "DisabledLink01": {
-        "type": "color",
-        "description": "Disabled primary links",
-        "value": "$Colors.Gray.Gray30"
-      },
-      "DisabledLink02": {
-        "type": "color",
-        "description": "Disabled secondary links",
-        "value": "$Colors.Gray.Gray30"
-      },
-      "DisabledLink01Dark": {
-        "type": "color",
-        "description": "Disabled primary links - Dark",
-        "value": "$Colors.Blue.Blue80"
-      },
-      "DisabledLink02Dark": {
-        "type": "color",
-        "description": "Disabled secondary links - Dark",
-        "value": "$Colors.Gray.Gray80"
-      },
-      "DisabledOn": {
-        "type": "color",
-        "description": "Disabled on state",
-        "value": "$Colors.Blue.Blue20"
-      },
-      "DisabledOnDark": {
-        "type": "color",
-        "description": "Disabled on state - Dark",
-        "value": "$Colors.Blue.Blue30"
-      }
-    },
-    "Support": {
-      "SupportError": {
-        "type": "color",
-        "description": "Error text, Icon with error, error element border",
-        "value": "$Colors.Red.Red50"
-      },
-      "SupportErrorLight": {
-        "type": "color",
-        "description": "",
-        "value": "#f4bfcd"
-      },
-      "SupportErrorDark": {
-        "type": "color",
-        "description": "Error text, Icon with error, error element border - Dark",
-        "value": "$Colors.Red.Red40"
-      },
-      "SupportSuccess": {
-        "type": "color",
-        "description": "Success text, button background, button border",
-        "value": "$Colors.Green.Green50"
-      },
-      "SupportSuccessLight": {
-        "type": "color",
-        "description": "",
-        "value": "#ccf4e1"
-      },
-      "SupportSuccessDark": {
-        "type": "color",
-        "description": "Success text, button background, button border - Dark",
-        "value": "$Colors.Green.Green40"
-      },
-      "SupportInfo": {
-        "type": "color",
-        "description": "Information text, button background, button border",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "SupportInfoLight": {
-        "type": "color",
-        "description": "",
-        "value": "#b9d8f7"
-      },
-      "SupportInfoDark": {
-        "type": "color",
-        "description": "Information text, button background, button border - Dark",
-        "value": "$Colors.Blue.Blue50"
-      },
-      "SupportWarning": {
-        "type": "color",
-        "description": "Warning text, Icon with error, error element border",
-        "value": "$Colors.Yellow.Yellow60"
-      },
-      "SupportWarningLight": {
-        "type": "color",
-        "description": "",
-        "value": "#fff4ba"
-      },
-      "SupportWarningDark": {
-        "type": "color",
-        "description": "Warning text, Icon with error, error element border - Dark",
-        "value": "$Colors.Yellow.Yellow40"
-      },
-      "SupportDanger": {
-        "type": "color",
-        "description": "Danger text, button background, button border",
-        "value": "$Colors.Red.Red50"
-      },
-      "SupportDangerLight": {
-        "type": "color",
-        "description": "",
-        "value": "#f4bfcd"
-      },
-      "SupportDangerDark": {
-        "type": "color",
-        "description": "Danger text, button background, button border - Dark",
-        "value": "$Colors.Red.Red40"
-      }
-    }
-  },
-  "User": {
-    "Red": {
-      "type": "color",
-      "description": "",
-      "value": "#f88282"
-    },
-    "Pink": {
-      "type": "color",
-      "description": "",
-      "value": "#f191dd"
-    },
-    "Purple": {
-      "type": "color",
-      "description": "",
-      "value": "#c88ae5"
-    },
-    "Turquoise": {
-      "type": "color",
-      "description": "",
-      "value": "#86cee5"
-    },
-    "RoyalBlue": {
-      "type": "color",
-      "description": "",
-      "value": "#93b3f2"
-    },
-    "Blue": {
-      "type": "color",
-      "description": "",
-      "value": "#7ecaf5"
-    },
-    "Aquamarine": {
-      "type": "color",
-      "description": "",
-      "value": "#79ebda"
-    },
-    "YellowGreen": {
-      "type": "color",
-      "description": "",
-      "value": "#8ae58b"
-    },
-    "Yellow": {
-      "type": "color",
-      "description": "",
-      "value": "#f3c90a"
-    },
-    "Orange": {
-      "type": "color",
-      "description": "",
-      "value": "#f9b12c"
-    },
-    "RedLight": {
-      "type": "color",
-      "description": "",
-      "value": "#fddada"
-    },
-    "PinkLight": {
-      "type": "color",
-      "description": "",
-      "value": "#fbdef5"
-    },
-    "PurpleLight": {
-      "type": "color",
-      "description": "",
-      "value": "#efdcf7"
-    },
-    "TurquoiseLight": {
-      "type": "color",
-      "description": "",
-      "value": "#dbf0f7"
-    },
-    "RoyalBlueLight": {
-      "type": "color",
-      "description": "",
-      "value": "#dfe8fb"
-    },
-    "BlueLight": {
-      "type": "color",
-      "description": "",
-      "value": "#d8effc"
-    },
-    "AquamarineLight": {
-      "type": "color",
-      "description": "",
-      "value": "#d7f9f4"
-    },
-    "YellowGreenLight": {
-      "type": "color",
-      "description": "",
-      "value": "#dcf7dc"
-    },
-    "YellowLight": {
-      "type": "color",
-      "description": "",
-      "value": "#fcefb6"
-    },
-    "OrangeLight": {
-      "type": "color",
-      "description": "",
-      "value": "#fde8c0"
-    }
-  }
+  ]
 }

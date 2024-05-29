@@ -1,297 +1,305 @@
 {
-  "Heading": {
-    "H1": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 32
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.25
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "H2": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 24
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.3300000429153442
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "H3": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 20
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.600000023841858
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "H4": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 16
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.5
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "H5": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 14
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.7100000381469727
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
+  "collectionName": "Typography",
+  "modes": [
+    {
+      "mode": "Mode 1",
+      "tokens": {
+        "Heading": {
+          "H1": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 32
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.25
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "H2": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 24
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.3300000429153442
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "H3": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 20
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.600000023841858
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "H4": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 16
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.5
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "H5": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 14
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.7100000381469727
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          }
+        },
+        "Body": {
+          "Body16": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 16
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.7100000381469727
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          },
+          "Body14": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 14
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.7100000381469727
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          },
+          "Body13": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 13
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.5299999713897705
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          },
+          "Body12": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 12
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1.3300000429153442
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          }
+        },
+        "Label": {
+          "Label1": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 16
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "Label2": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 16
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          },
+          "Label3": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 14
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "Label4": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 14
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          },
+          "Label5": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 12
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "Label6": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 12
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          },
+          "Label7": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 11
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Bold"
+            }
+          },
+          "Label8": {
+            "size": {
+              "type": "number",
+              "description": "",
+              "value": 11
+            },
+            "line-height": {
+              "type": "number",
+              "description": "",
+              "value": 1
+            },
+            "weight": {
+              "type": "string",
+              "description": "",
+              "value": "Regular"
+            }
+          }
+        }
       }
     }
-  },
-  "Body": {
-    "Body16": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 16
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.7100000381469727
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    },
-    "Body14": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 14
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.7100000381469727
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    },
-    "Body13": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 13
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.5299999713897705
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    },
-    "Body12": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 12
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1.3300000429153442
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    }
-  },
-  "Label": {
-    "Label1": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 16
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "Label2": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 16
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    },
-    "Label3": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 14
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "Label4": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 14
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    },
-    "Label5": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 12
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "Label6": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 12
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    },
-    "Label7": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 11
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Bold"
-      }
-    },
-    "Label8": {
-      "size": {
-        "type": "number",
-        "description": "",
-        "value": 11
-      },
-      "line-height": {
-        "type": "number",
-        "description": "",
-        "value": 1
-      },
-      "weight": {
-        "type": "string",
-        "description": "",
-        "value": "Regular"
-      }
-    }
-  }
+  ]
 }
