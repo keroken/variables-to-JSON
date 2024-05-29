@@ -26,6 +26,15 @@
     gap: var(--spacing);
   }
 
+  select {
+    background-color: var(--figma-color-bg-component);
+    border: 2px solid var(--figma-color-border);
+    color: var(--figma-color-text-secondary);
+    font-family: Andale Mono, monospace;
+    font-size: 0.9rem;
+    padding: var(--spacing);
+  }
+
   button {
     appearance: none;
     border-radius: 4px;
@@ -69,6 +78,9 @@
   }
 </style>
 <main>
+  <select id="select-collection">
+    <option value="SelectCollection">Select Collection</option>
+  </select>
   <button id="export" type="button">Export Variables</button>
   <textarea
     placeholder="Exported variables will render here..."
@@ -77,16 +89,28 @@
 </main>
 <script>
   window.onmessage = ({ data: { pluginMessage } }) => {
-    if (pluginMessage.type === "EXPORT_RESULT") {
-      document.querySelector("textarea").innerHTML = pluginMessage.files
-        .map(
-          ({ fileName, body }) =>
-            `/* ${fileName} */\n\n${JSON.stringify(body, null, 2)}`
-        )
-        .join("\n\n\n");
+    let selectedCollection = '';
+    if (pluginMessage.type === "COLLECTION_OPTIONS") {
+      const select = document.getElementById("select-collection");
+      const collectionOptions = pluginMessage.data;
+      collectionOptions.forEach(({ id, name }) => {
+        console.log(id, name);
+        const option = document.createElement("option");
+        option.value = id;
+        option.label = name;
+        select.appendChild(option);
+      })
+      select.addEventListener("change", (e) => {
+        selectedCollection = e.target.value;
+      });
+    } else if (pluginMessage.type === "EXPORT_RESULT") {
+      const output = pluginMessage.file.length > 1 ? pluginMessage.file : pluginMessage.file[0];
+      document.querySelector("textarea").innerHTML = 
+        `${JSON.stringify(output, null, 2)}`
     }
+
+    document.getElementById("export").addEventListener("click", () => {
+      parent.postMessage({ pluginMessage: { type: "EXPORT", data: selectedCollection } }, "*");
+    });
   };
-  document.getElementById("export").addEventListener("click", () => {
-    parent.postMessage({ pluginMessage: { type: "EXPORT" } }, "*");
-  });
 </script>

@@ -1,5 +1,34 @@
 console.clear();
 
+// execute Plugin
+
+figma.ui.onmessage = async (e) => {
+  console.log("code received", e);
+  if (e.type === 'EXPORT') {
+    await exportToJSON(e.data);
+  } else if (e.type === 'IMPORT') {
+    const { fileName, body } = e;
+    importJSONFile({ fileName, body });
+  }
+}
+
+if (figma.command === "import") {
+  figma.showUI(__uiFiles__["import"], {
+    width: 500,
+    height: 500,
+    themeColors: true,
+  });
+} else if (figma.command === "export") {
+  figma.showUI(__uiFiles__["export"], {
+    width: 500,
+    height: 500,
+    themeColors: true,
+  });
+  const collections = figma.variables.getLocalVariableCollections();
+  const collectionOptions = collections.map((collection) => ({ id: collection.id, name: collection.name }));
+  figma.ui.postMessage({ type: "COLLECTION_OPTIONS", data: collectionOptions });
+}
+
 // Import JSON
 
 type TokenType = {
@@ -181,40 +210,30 @@ function traverseToken({
   }
 }
 
-// execute Plugin
+// Export JSON
 
-figma.ui.onmessage = (e) => {
-  console.log("code received", e);
-  if (e.type === 'EXPORT') {
-    exportToJSON();
-  } else if (e.type === 'IMPORT') {
-    const { fileName, body } = e;
-    importJSONFile({ fileName, body });
+async function exportToJSON(selectedCollection: string) {
+  const collection = await figma.variables.getVariableCollectionByIdAsync(selectedCollection);
+  if (collection !== null) {
+    const file = processCollection(collection);
+    console.log("collection", collection, file);
+    figma.ui.postMessage({ type: "EXPORT_RESULT", file });
   }
 }
 
-// Export JSON
-
-function exportToJSON() {
-  const collections = figma.variables.getLocalVariableCollections();
-  const files:{ fileName: string, body: {}} [] = [];
-  collections.forEach((collection) =>
-    files.push(...processCollection(collection))
-  );
-  figma.ui.postMessage({ type: "EXPORT_RESULT", files });
-}
-
 function processCollection({ name, modes, variableIds }: VariableCollection) {
-  const files: { fileName: string, body: {}}[] = [];
+  let files: {}[] = [];
+  console.log("processCollection", name, modes, variableIds);
+  console.log(name, modes, variableIds);
   modes.forEach((mode) => {
-    const file = { fileName: `${name}.${mode.name}.tokens.json`, body: {} };
+    let file: { mode: string, tokens: {}} = { mode: mode.name, tokens: {}};
     variableIds.forEach((variableId) => {
       const variable = figma.variables.getVariableById(variableId);
       if (variable !== null) {
         const { name, description, resolvedType, valuesByMode } = variable;
         const value = valuesByMode[mode.modeId];
         if (value !== undefined && ["COLOR", "FLOAT", "STRING"].includes(resolvedType)) {
-          let obj:{[key:string]: any} = file.body;
+          let obj:{[key:string]: any} = file.tokens;
           name.split("/").forEach((groupName) => {
             obj[groupName] = obj[groupName] || {};
             obj = obj[groupName];
@@ -250,20 +269,6 @@ function rgbToHex( colorValue: RGBA) {
 
   const hex = [toHex(r), toHex(g), toHex(b)].join("");
   return `#${hex}`;
-}
-
-if (figma.command === "import") {
-  figma.showUI(__uiFiles__["import"], {
-    width: 500,
-    height: 500,
-    themeColors: true,
-  });
-} else if (figma.command === "export") {
-  figma.showUI(__uiFiles__["export"], {
-    width: 500,
-    height: 500,
-    themeColors: true,
-  });
 }
 
 function parseColor(color: string) {
