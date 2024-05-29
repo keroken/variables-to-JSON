@@ -216,15 +216,12 @@ async function exportToJSON(selectedCollection: string) {
   const collection = await figma.variables.getVariableCollectionByIdAsync(selectedCollection);
   if (collection !== null) {
     const file = processCollection(collection);
-    console.log("collection", collection, file);
     figma.ui.postMessage({ type: "EXPORT_RESULT", file });
   }
 }
 
 function processCollection({ name, modes, variableIds }: VariableCollection) {
   let files: {}[] = [];
-  console.log("processCollection", name, modes, variableIds);
-  console.log(name, modes, variableIds);
   modes.forEach((mode) => {
     let file: { mode: string, tokens: {}} = { mode: mode.name, tokens: {}};
     variableIds.forEach((variableId) => {

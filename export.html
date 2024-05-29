@@ -94,7 +94,6 @@
       const select = document.getElementById("select-collection");
       const collectionOptions = pluginMessage.data;
       collectionOptions.forEach(({ id, name }) => {
-        console.log(id, name);
         const option = document.createElement("option");
         option.value = id;
         option.label = name;
